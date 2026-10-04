@@ -12,7 +12,7 @@ Swedish airspace is the default, but any ICAO airport or sector works. Positions
 
 ### Claude (web, desktop and mobile apps)
 
-1. Download **[atc.zip](https://github.com/Oppfinnaren/atc-skill/releases/latest/download/atc.zip)**.
+1. Download **[atc.zip](https://github.com/sparrisoppa/atc-skill/releases/latest/download/atc.zip)**.
 2. In Claude, open **Settings → Capabilities → Skills**, choose **Upload skill** and pick `atc.zip`.
 3. In a new chat, type `/atc` or "let's play the ATC game".
 
@@ -21,7 +21,7 @@ If you don't see Skills in settings, check that code execution is turned on unde
 ### Claude Code
 
 ```
-/plugin marketplace add Oppfinnaren/atc-skill
+/plugin marketplace add sparrisoppa/atc-skill
 /plugin install atc@atc-skill
 ```
 
@@ -42,4 +42,4 @@ plugins/atc/skills/atc/SKILL.md      the skill itself
 
 To publish a change, edit `SKILL.md`, bump `version` in `plugin.json` and push to `main`. The workflow creates a new release with a fresh `atc.zip`.
 
-Made by [Mathias Kallmert](https://oppfinnaren.github.io/sparrisoppa-website/).
+Made by [Mathias Kallmert](https://sparrisoppa.github.io/website/).

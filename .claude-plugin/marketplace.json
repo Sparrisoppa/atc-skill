@@ -3,7 +3,7 @@
   "description": "ATC Simulator: a realistic, text-based air traffic control game for Claude.",
   "owner": {
     "name": "Mathias Kallmert",
-    "url": "https://github.com/Oppfinnaren"
+    "url": "https://github.com/sparrisoppa"
   },
   "plugins": [
     {

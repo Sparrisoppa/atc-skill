@@ -4,7 +4,7 @@ name: Release skill
 # claude.ai expects) and attaches it to a release named after the version
 # in plugins/atc/.claude-plugin/plugin.json. Bump that version to make a
 # new release; otherwise the current release's zip is replaced.
-# Stable download link: https://github.com/Oppfinnaren/atc-skill/releases/latest/download/atc.zip
+# Stable download link: https://github.com/sparrisoppa/atc-skill/releases/latest/download/atc.zip
 
 on:
   push:

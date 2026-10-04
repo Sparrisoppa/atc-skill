@@ -4,10 +4,10 @@
   "description": "A realistic, text-based air traffic control training game. Start with /atc, optionally with a position such as ESSA_TWR and a scenario.",
   "author": {
     "name": "Mathias Kallmert",
-    "url": "https://github.com/Oppfinnaren"
+    "url": "https://github.com/sparrisoppa"
   },
-  "homepage": "https://oppfinnaren.github.io/sparrisoppa-website/projects/atc-simulator/",
-  "repository": "https://github.com/Oppfinnaren/atc-skill",
+  "homepage": "https://sparrisoppa.github.io/website/projects/atc-simulator/",
+  "repository": "https://github.com/sparrisoppa/atc-skill",
   "keywords": [
     "atc",
     "aviation",
