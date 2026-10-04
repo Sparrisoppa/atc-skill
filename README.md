@@ -14,7 +14,7 @@ Swedish airspace is the default, but any ICAO airport or sector works. Positions
 
 1. Download **[atc.zip](https://github.com/sparrisoppa/atc-skill/releases/latest/download/atc.zip)**.
 2. In Claude, open **Settings → Capabilities → Skills**, choose **Upload skill** and pick `atc.zip`.
-3. In a new chat, type `/atc` or "let's play the ATC game".
+3. In a new chat, type `/atc` or "let's play the air traffic control game".
 
 If you don't see Skills in settings, check that code execution is turned on under Capabilities. On Team and Enterprise plans an admin may need to allow skills.
 
@@ -25,7 +25,7 @@ If you don't see Skills in settings, check that code execution is turned on unde
 /plugin install atc@atc-skill
 ```
 
-Then start a game with `/atc:atc`, or ask Claude to play the ATC game. Run `/plugin marketplace update atc-skill` to get new versions.
+Then start a game with `/atc:atc`, or ask Claude to play the air traffic control game. Run `/plugin marketplace update atc-skill` to get new versions.
 
 ## In-game commands
 
