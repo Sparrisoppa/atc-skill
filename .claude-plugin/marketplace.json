@@ -1,0 +1,15 @@
+{
+  "name": "atc-skill",
+  "description": "ATC Simulator: a realistic, text-based air traffic control game for Claude.",
+  "owner": {
+    "name": "Mathias Kallmert",
+    "url": "https://github.com/Oppfinnaren"
+  },
+  "plugins": [
+    {
+      "name": "atc",
+      "source": "./plugins/atc",
+      "description": "Play air traffic controller in chat: Claude plays pilots, neighbouring sectors and the weather, and coaches your phraseology."
+    }
+  ]
+}

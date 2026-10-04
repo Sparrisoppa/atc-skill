@@ -1,0 +1,42 @@
+name: Release skill
+
+# Packs the skill as atc.zip (a folder `atc/` with SKILL.md, the layout
+# claude.ai expects) and attaches it to a release named after the version
+# in plugins/atc/.claude-plugin/plugin.json. Bump that version to make a
+# new release; otherwise the current release's zip is replaced.
+# Stable download link: https://github.com/Oppfinnaren/atc-skill/releases/latest/download/atc.zip
+
+on:
+  push:
+    branches: [main]
+    paths: ["plugins/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Build atc.zip
+        run: |
+          cd plugins/atc/skills
+          zip -r "$GITHUB_WORKSPACE/atc.zip" atc
+          unzip -l "$GITHUB_WORKSPACE/atc.zip"
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(jq -r .version plugins/atc/.claude-plugin/plugin.json)
+          tag="v$version"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" atc.zip --clobber
+          else
+            gh release create "$tag" atc.zip \
+              --title "ATC Simulator $tag" \
+              --notes "Download atc.zip and upload it in Claude under Settings → Capabilities → Skills. See the README for Claude Code."
+          fi
